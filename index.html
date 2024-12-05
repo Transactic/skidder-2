@@ -1,0 +1,909 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxbot.gg | #1 Twitch & Kick viewer bot</title>
+
+
+  <!-- Meta tags -->
+  <meta name="title" content="Luxbot.gg | Affordable #1 Twitch & Kick Viewer Bot for Streamers">
+  <meta name="description" content="Discover affordable AIO bots for Twitch, Kick, YouTube, and more! Boost your streaming presence with our premium social media tools, exclusive deals, and ongoing updates. Join countless satisfied streamers transforming their channels today!">
+  <meta name="keywords" content="twitch viewbot,twitch AIO,Social media bot,Twitch revenue checker,Kick AIO,Kick viewbot,Kick viewerbot,Twitch stream bot,Twitch chatbot,Twitch adbot,Twitch API adbot,boost your streaming presence">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!-- FavIcon (global support) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favIcon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favIcon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favIcon/favicon-16x16.png">
+  <link rel="manifest" href="favIcon/site.webmanifest">
+  <link rel="mask-icon" href="favIcon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/2e323dd1c4.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  <!-- Particles JS -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+
+
+  <!-- Personal -->
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/navBar.css" rel="stylesheet">
+  <script src="./js/main.js"></script>
+
+
+
+  <!-- WOWjs (text effects) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+
+  <!-- Crisp.chat -->
+  <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="6ea84f10-cf8f-42d1-a034-0635777b86cf";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+</head>
+<body>
+
+  <noscript>
+      <style>
+        .wow {
+          visibility: visible !important;
+        }
+      </style>
+  </noscript>
+
+
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <div class="AnimateCursor">
+        <a href="../../../" class="logo me-auto"><img src="./img/Logo.png" alt="Small preview logo for Luxbot.gg with a dark-background" class="img-fluid" class="HoverEffect"></a>
+      </div>
+
+      <nav id="navbar" class="navbar" >
+        <ul>
+          <li><a href="../../../" class="nav-link">Home</a></li>
+          <li><a href="https://stats.uptimerobot.com/GrVXxsBnGj">Status</a></li>
+          <li class="dropdown"><a href="#"><span>Software</span><i class="fa fa-chevron-down" data-fa-transform="down-444"></i></a>
+            <ul>
+
+              <li class="dropdown"><a href="https://did.mysellix.io/"><span><svg xmlns="http://www.w3.org/2000/svg"  fill="white" color="White" width="13px" height="13px" viewBox="0 0 512 512"><path d="M391.17,103.47H352.54v109.7h38.63ZM285,103H246.37V212.75H285ZM120.83,0,24.31,91.42V420.58H140.14V512l96.53-91.42h77.25L487.69,256V0ZM449.07,237.75l-77.22,73.12H294.61l-67.6,64v-64H140.14V36.58H449.07Z"/></svg>ㅤTwitch</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="./software/twitch/aio/">Luxbot AIO [Lite]</a></li>
+                  <li><a href="./software/twitch/aio-pro/">Luxbot AIO [PRO]</a></li>
+                  <li><a href="./software/twitch/api-adbot/">API adbot</a></li>
+                  <li><a href="./software/twitch/hybrid/">API adbot [Hybrid]</a></li>
+                  <li><a href="https://did.mysellix.io/product/ttv-live-viewer-multi-channel-support-1-month-access">Mass viewbot</a></li>
+                  <li><a href="./software/twitch/revenue-checker/">Revenue checker</a></li>
+                </ul>
+              </li>
+
+
+              <li class="dropdown"><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg"  fill="white" color="White" width="15px" height="15px" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>ㅤYouTube</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://did.mysellix.io/">Live view bot</a></li>
+                </ul>
+              </li>
+
+              
+              <li class="dropdown"><a href="https://did.mysellix.io/"><span> 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="white" color="White" width="13px" height="13px" viewBox="0 0 36.89 36.45"><path d="M25.2 0c.6 0 1.03.55.9 1.12l-1.2 5.16c-.06.29.15.56.45.56h10.69c.5 0 .85.4.85.9 0 .08 0 .16-.03.23l-2.5 10.2a.91.91 0 0 1-.92.69l-5.85-.26a7.8 7.8 0 0 0-5.38 2.08c-2 1.92-2.23 5.06-1.4 7.07a4.93 4.93 0 0 0 5.55 2.77 3.42 3.42 0 0 0 2.7-3.71c-.16-1.35-.93-2-1.85-2-.91 0-1.3.5-1.37 1-.08.51.08.8.43 1.13.54.52-.43 1.92-1.82 1.1-.76-.45-1.28-1.54-1.13-2.9.2-1.85 1.65-3.52 4.27-3.54 2.68-.02 4.59 1.68 5.22 4.22.8 3.18-.84 6.96-4.57 9.02-4.64 2.55-12.48 2.28-16.72-2.31a12.34 12.34 0 0 1-3.1-9.33 25.93 25.93 0 0 1 .43-3.23.68.68 0 0 0-.67-.81H.9a.91.91 0 0 1-.89-1.11L2.3 7.9a1.37 1.37 0 0 1 1.34-1.07h7.08a.91.91 0 0 0 .88-.68L12.82 1a1.37 1.37 0 0 1 1.33-1H25.2z"/>
+                </svg>ㅤTrovo live</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="./software/trovo/aio/">Trovo AIO</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="https://did.mysellix.io/"><span> 
+                <svg xmlns="http://www.w3.org/2000/svg" color="White" width="13px" height="13px"  version="1.0" preserveAspectRatio="xMidYMid meet" viewBox="82 63.5 286 321.5">  <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="#FFFF" stroke="none"> <path d="M824 4361 c-2 -2 -4 -726 -4 -1608 l0 -1603 530 0 530 0 0 355 c0 277 3 355 13 356 6 0 39 1 72 0 33 0 113 0 177 -1 l118 0 2 -177 3 -177 158 3 c86 1 166 -1 177 -4 19 -6 20 -16 20 -181 l0 -174 530 0 530 0 0 525 0 525 -175 0 c-163 0 -175 1 -185 20 -6 12 -9 81 -8 180 l3 160 -177 0 -178 0 0 190 0 190 177 2 176 3 -2 160 c-1 88 1 168 4 178 6 15 26 17 186 17 l179 0 0 530 0 530 -32 0 c-18 0 -257 1 -530 2 l-498 3 -2 -180 -3 -180 -177 -3 -178 -2 -2 -178 -3 -177 -185 0 -185 0 -3 358 -2 357 -28 0 c-537 4 -1025 4 -1028 1z"></path> </g> </svg>
+                ㅤKick.com</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="./software/kick/aio/">Kick AIO</a></li>
+                </ul>
+              </li>
+              
+
+              <li class="dropdown"><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" fill="white" color="White" width="15px" height="15px" viewBox="0 0 448 512"><path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>ㅤOther</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="./software/extra/mass-livestream/">Mass Live stream bot</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li> <a href="https://discord.luxbot.gg/">Contact us</a></li>
+        </ul>
+        <i id="mobile-nav-toggle" class="fa-solid fa-bars-staggered mobile-nav-toggle"></i>
+      </nav>
+    </div>
+    </header>
+    
+
+
+        <section id="WelcomeHero" class="SectionContainer d-flex align-items-center">
+
+
+          <div class="relative FeaturesSvg">
+            <div class="BG_SQUARE">
+            </div>
+        </div>
+
+
+
+            <div class="container ml-7 mr-7">
+      
+                <h1  class="HeaderText pt-5 mt-5  wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">Luxbot.gg</h1>
+                <h2 class=" wow fadeIn" data-wow-duration="3s" data-wow-delay="0.3s">Discover the best <span class="Highlight">software</span> & <span class="Highlight">services</span> for your botting needs !</h2>
+
+                <div class="ctaHeaderText mt-5  wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
+                    <h1>Check out some of our products</h1>
+                </div>
+
+                
+                <div class="container d-flex justify-content-center pb-5  Bots wow fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
+                    <div class="CTA">
+                        <button class="Twitch FilterOptions FL wow fadeIn" data-wow-duration="3s" data-wow-delay="0.3s" onclick="SmoothScroll('#Twitch')"><span><i class="fa-brands fa-twitch"></i></i></span></span> Twitch</button>                        
+                        <button class="YouTube FilterOptions FR wow fadeIn" data-wow-duration="3s" data-wow-delay="0.3s" onclick="SmoothScroll('#YouTube')"><span><i class="fa-brands fa-youtube"></i></i></span> YouTube</button>
+                        <button class="Trovo FilterOptions FL d-none d-sm-none d-md-inline wow fadeIn" data-wow-duration="3s" data-wow-delay="0.35s" onclick="SmoothScroll('#Kick')"><span><i class="fa-regular fa-clone"></i></span> Kick</button>
+                        <button class="Other FilterOptions FR d-none d-sm-none d-md-inline wow fadeIn" data-wow-duration="3s" data-wow-delay="0.36s" onclick="SmoothScroll('#Extra')"><span><i class="fa-solid fa-terminal"></i></span> Extra</button>
+                    </div>
+                </div>
+
+
+                <!-- <h5 class="text-center pt-5">Twitch bots | YouTube bots | Browser automation | Web scrapers</h5>
+                <h5 class="text-center">& so much more</h5> -->
+                <span></span>
+
+                <div class="scroll-down"></div>
+            </div>
+            
+        </section>
+
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 245.3"><path fill="#232323" fill-opacity="1" d="M0,64L40,69.3C80,75,160,85,240,128C320,171,400,245,480,245.3C560,245,640,171,720,149.3C800,128,880,160,960,154.7C1040,149,1120,107,1200,90.7C1280,75,1360,85,1400,90.7L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>         -->
+
+
+
+        
+        <section id="ProductShowcaseHero" class="SectionContainer d-flex align-items-center">
+
+
+          <div class="ParticlesContainer">            
+            <div class="container Products">   
+            
+
+              <div class="row Subtext">
+                <h6 class="text-center wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">Products</h6>
+                <div class="col-12 d-flex justify-content-center">
+                  <h5 class="text-center wow fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">We provide bots for multiple social media platforms, If you cannot find what you need feel free to contact us as we also create custom tools.</h5>
+                </div>
+            </div>
+  
+              <div class="Spacer"></div>
+              <h1 id="Twitch" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="211">Twitch <i class="fa-solid fa-link BotTitleShortLink" onclick="window.location.hash='#Twitch';  navigator.clipboard.writeText(window.location.href)"></i></h1>
+              <button class="Twitch FilterOptions wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="211"><span><svg xmlns="http://www.w3.org/2000/svg" fill="white" color="White" width="20px" height="20px" viewBox="0 0 512 512"><path d="M391.17,103.47H352.54v109.7h38.63ZM285,103H246.37V212.75H285ZM120.83,0,24.31,91.42V420.58H140.14V512l96.53-91.42h77.25L487.69,256V0ZM449.07,237.75l-77.22,73.12H294.61l-67.6,64v-64H140.14V36.58H449.07Z"></path></svg></span> Twitch</button>
+  
+              <div class="row mt-3 ">
+                  <div class="col-lg-3 col-xl-3">
+  
+
+                    <a href="./software/twitch/aio/">
+                    <div class="wrap wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="111">
+                      <div class="card preShow TwitchProduct">
+                        <div class="card__top">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="white" color="White" width="30px" height="30px" viewBox="0 0 512 512"><path d="M391.17,103.47H352.54v109.7h38.63ZM285,103H246.37V212.75H285ZM120.83,0,24.31,91.42V420.58H140.14V512l96.53-91.42h77.25L487.69,256V0ZM449.07,237.75l-77.22,73.12H294.61l-67.6,64v-64H140.14V36.58H449.07Z"></path>
+                              <defs>
+                                  <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+                                      <stop stop-color="#0153CD" offset="0%"></stop>
+                                      <stop stop-color="#2684FF" offset="100%"></stop>
+                                  </linearGradient>
+                                   <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-2">
+                                      <stop stop-color="#ffffff" offset="0%" stop-opacity="0.526524257" ></stop>
+                                      <stop stop-color="#ffffff" offset="100%"></stop>
+                                  </linearGradient>
+                          </defs></svg>
+                          <h2>Twitch</h2>
+                        </div>
+                        <div class="card__bottom">
+                          <h2>Twitch AIO [BASIC]</h2>
+                          <p>
+                              Twitch bot with multiple HQ features
+                              Viewbot, chatbot, Account gen
+                          </p>
+                          <p>
+                            HQ twitch AIO bot with multiple features such as a "stable" viewbot, a "Chatbot" & the ability to add accounts into the "viewer list" to make it look legit.
+                          </p>
+                        </div>
+                        <span>
+                    </span>
+                      </div>
+                    </div>
+                  </a>
+                    
+  
+                  </div>
+                  <div class="col-lg-3 col-xl-3">
+  
+  
+                    <a href="./software/twitch/aio-pro/">
+                      <div class="wrap wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="111">
+                        <div class="card preShow TwitchProduct">
+                          <div class="card__top">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" color="White" width="30px" height="30px" viewBox="0 0 512 512"><path d="M391.17,103.47H352.54v109.7h38.63ZM285,103H246.37V212.75H285ZM120.83,0,24.31,91.42V420.58H140.14V512l96.53-91.42h77.25L487.69,256V0ZM449.07,237.75l-77.22,73.12H294.61l-67.6,64v-64H140.14V36.58H449.07Z"></path>
+                                <defs>
+                                    <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+                                        <stop stop-color="#0153CD" offset="0%"></stop>
+                                        <stop stop-color="#2684FF" offset="100%"></stop>
+                                    </linearGradient>
+                                     <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-2">
+                                        <stop stop-color="#ffffff" offset="0%" stop-opacity="0.526524257" ></stop>
+                                        <stop stop-color="#ffffff" offset="100%"></stop>
+                                    </linearGradient>
+                            </defs></svg>
+                            <h2>Twitch</h2>
+                          </div>
+                          <div class="card__bottom">
+                            <h2>Twitch AIO [PRO] <div class="flame-emoji">🔥</div></h2>
+                            <p>
+                              Advanced twitch AIO bot with over 18+ features.
+                            </p>
+                            <p>
+                              The #1 Twitch AIO bot on the market with over 18+ advanced features such as a stable viewbot, HQ account creator, Clip viewbot, Chatbot, Twitch kasada bypass & more.
+                            </p>
+                          </div>
+                          <span>
+                      </span>
+                        </div>
+                      </div>
+                      </a>
+    
+                      
+                  </div>
+                  <div class="col-lg-3 col-xl-3">
+  
+  
+  
+                    <a href="./software/twitch/api-adbot/">
+                      <div class="wrap wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="111">
+                        <div class="card preShow TwitchProduct">
+                          <div class="card__top">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" color="White" width="30px" height="30px" viewBox="0 0 512 512"><path d="M391.17,103.47H352.54v109.7h38.63ZM285,103H246.37V212.75H285ZM120.83,0,24.31,91.42V420.58H140.14V512l96.53-91.42h77.25L487.69,256V0ZM449.07,237.75l-77.22,73.12H294.61l-67.6,64v-64H140.14V36.58H449.07Z"></path>
+                                <defs>
+                                    <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+                                        <stop stop-color="#0153CD" offset="0%"></stop>
+                                        <stop stop-color="#2684FF" offset="100%"></stop>
+                                    </linearGradient>
+                                     <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-2">
+                                        <stop stop-color="#ffffff" offset="0%" stop-opacity="0.526524257" ></stop>
+                                        <stop stop-color="#ffffff" offset="100%"></stop>
+                                    </linearGradient>
+                            </defs></svg>
+                            <h2>Twitch</h2>
+                          </div>
+                          <div class="card__bottom">
+                            <h2>Twitch Adbot (API)</h2>
+                            <p>
+                                Fast twitch API adbot to generate ad-revenue on twitch via prerolls
+                            </p>
+                            <p>
+                              This is a very fast twitch adbot that generates ad-revenue on twitch by replicating real users watching ads (proxy / VPN) support is included.
+                            </p>
+                          </div>
+                          <span>
+                      </span>
+                        </div>
+                      </div>
+                      </a>
+                      
+                
+  
+  
+                  </div>
+                  <div class="col-lg-3 col-xl-3">
+  
+  
+  
+                    <a href="./software/twitch/hybrid/">
+                      <div class="wrap wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="111">
+                        <div class="card preShow TwitchProduct">
+                          <div class="card__top">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" color="White" width="30px" height="30px" viewBox="0 0 512 512"><path d="M391.17,103.47H352.54v109.7h38.63ZM285,103H246.37V212.75H285ZM120.83,0,24.31,91.42V420.58H140.14V512l96.53-91.42h77.25L487.69,256V0ZM449.07,237.75l-77.22,73.12H294.61l-67.6,64v-64H140.14V36.58H449.07Z"></path>
+                                <defs>
+                                    <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+                                        <stop stop-color="#0153CD" offset="0%"></stop>
+                                        <stop stop-color="#2684FF" offset="100%"></stop>
+                                    </linearGradient>
+                                     <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-2">
+                                        <stop stop-color="#ffffff" offset="0%" stop-opacity="0.526524257" ></stop>
+                                        <stop stop-color="#ffffff" offset="100%"></stop>
+                                    </linearGradient>
+                            </defs></svg>
+                            <h2>Twitch</h2>
+                          </div>
+                          <div class="card__bottom">
+                            <h2>Twitch hybrid Adbot <div class="flame-emoji">🔥</div></h2>
+                            <p>
+                             Hybrid twitch API adbot (preroll + midroll) + viewbot
+                            </p>
+                            <p>
+                              High quality twitch API adbot that bots preroll ads & midroll ads whilst also adding viewers, Bot also has advanced configuration options.
+                            </p>
+                          </div>
+                          <span>
+                      </span>
+                        </div>
+                      </div>
+                    </a>
+                      
+
+  
+  
+  
+                  </div>
+                </div>
+  
+  
+  
+  
+                <div class="row mt-3">
+                  <div class="col-lg-3 col-xl-3">
+  
+                    <a href="./software/twitch/revenue-checker/">
+                    <div class="wrap wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                      <div class="card preShow TwitchProduct">
+                        <div class="card__top">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="white" color="White" width="30px" height="30px" viewBox="0 0 512 512"><path d="M391.17,103.47H352.54v109.7h38.63ZM285,103H246.37V212.75H285ZM120.83,0,24.31,91.42V420.58H140.14V512l96.53-91.42h77.25L487.69,256V0ZM449.07,237.75l-77.22,73.12H294.61l-67.6,64v-64H140.14V36.58H449.07Z"></path>
+                              <defs>
+                                  <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+                                      <stop stop-color="#0153CD" offset="0%"></stop>
+                                      <stop stop-color="#2684FF" offset="100%"></stop>
+                                  </linearGradient>
+                                   <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-2">
+                                      <stop stop-color="#ffffff" offset="0%" stop-opacity="0.526524257" ></stop>
+                                      <stop stop-color="#ffffff" offset="100%"></stop>
+                                  </linearGradient>
+                          </defs></svg>
+                          <h2>Twitch</h2>
+                        </div>
+                        <div class="card__bottom">
+                          <h2>Twitch Revenue checker</h2>
+                          <p>
+                            Check your twitch tokens for ad-revenue & onboarding progress
+                          </p>
+                          <p>
+                            This bot will let you check tokens for ad-revenue & onboarding progress, with a customizable config, webhook support & and a simple UI.
+                          </p>
+                        </div>
+                        <span>
+                    </span>
+                      </div>
+                    </div>
+                    </a>
+  
+  
+                  </div>
+
+                  <div class="col-lg-3 col-xl-3">
+                    
+
+                    <a href="./software/extra/mass-livestream/">
+                      <div class="wrap wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.2s" data-wow-offset="111">
+                        <div class="card preShow TwitchProduct">
+                          <div class="card__top">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="white" color="White" width="30px" height="30px" viewBox="0 0 512 512"><path d="M391.17,103.47H352.54v109.7h38.63ZM285,103H246.37V212.75H285ZM120.83,0,24.31,91.42V420.58H140.14V512l96.53-91.42h77.25L487.69,256V0ZM449.07,237.75l-77.22,73.12H294.61l-67.6,64v-64H140.14V36.58H449.07Z"></path>
+                                <defs>
+                                    <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+                                        <stop stop-color="#0153CD" offset="0%"></stop>
+                                        <stop stop-color="#2684FF" offset="100%"></stop>
+                                    </linearGradient>
+                                     <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-2">
+                                        <stop stop-color="#ffffff" offset="0%" stop-opacity="0.526524257" ></stop>
+                                        <stop stop-color="#ffffff" offset="100%"></stop>
+                                    </linearGradient>
+                            </defs></svg>
+                            <h2>Twitch</h2>
+                          </div>
+                          <div class="card__bottom">
+                            <h2>Twitch Mass streamer</h2>
+                            <p>
+                              Mass stream to twitch from video file to multiple accounts at the same time.
+                            </p>
+                            <p>
+                              With this tool you can mass stream to twitch from video files to multiple accounts at the same time, you can also extract stream-keys from twitch account tokens.
+                            
+                            </p>
+                          </div>
+                          <span>
+                      </span>
+                        </div>
+                      </div>
+                      </a>
+
+
+                   
+
+                  </div>
+                  <div class="col-lg-3 col-xl-3">
+
+
+                    
+                  </div>
+                </div>
+  
+  
+                
+              <div class="Spacer"></div>
+              <h1 id="YouTube" class="mt-2 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">YouTube <i class="fa-solid fa-link BotTitleShortLink" onclick="window.location.hash='#YouTube';  navigator.clipboard.writeText(window.location.href)"></i></h1>
+              <button class="YouTube FilterOptions wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s"><span><svg xmlns="http://www.w3.org/2000/svg" fill="white" color="White" width="20px" height="20px" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></span> YouTube</button>
+          
+  
+              <div class="row mt-3">
+                <div class="col-lg-3 col-xl-3">
+                  <a href="https://did.mysellix.io/">
+                  <div class="wrap wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="card preShow YouTubeProduct">
+                      <div class="card__top">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" color="White" width="30px" height="30px" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+                        <h2>YouTube</h2>
+                      </div>
+                      <div class="card__bottom">
+                        <h2>Livestream Viewbot</h2>
+                        <p>
+                          YouTube livestream viewbot with cookie support.
+                        </p>
+                        <p>
+                          YouTube livestream viewbot with cookie support capable of good views even after the latest YouTube update, the software is also working with free proxies.
+                        </p>
+                      </div>
+                      <span>
+                  </span>
+                    </div>
+                  </div>
+                  </a>
+                  
+  
+                </div>
+                <div class="col-lg-3 col-xl-3">
+                    
+                  <a href="./software/extra/mass-livestream/">
+                  <div class="wrap wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="card preShow YouTubeProduct">
+                      <div class="card__top">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" color="White" width="30px" height="30px" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+                        <h2>YouTube</h2>
+                      </div>
+                      <div class="card__bottom">
+                        <h2>YouTube Mass streamer</h2>
+                        <p>
+                          Mass stream from video files to multiple accounts at the same time.
+                        </p>
+                        <p>
+                          With this tool you can mass stream to YouTube live from video files to multiple accounts at the same time.
+                        
+                        </p>
+                      </div>
+                      <span>
+                  </span>
+                    </div>
+                  </div>
+                  </a>
+  
+                </div>
+                <div class="col-lg-3 col-xl-3">
+  
+                </div>
+                <div class="col-lg-3 col-xl-3">
+  
+                </div>
+              </div>
+  
+  
+              <div class="Spacer"></div>
+              <h1 id="Trovo" class="mt-2 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Trovo <i class="fa-solid fa-link BotTitleShortLink" onclick="window.location.hash='#Trovo';  navigator.clipboard.writeText(window.location.href)"></i></h1>
+              <button class="Trovo FilterOptions wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s"><span>
+                <svg  version="1.0" xmlns="http://www.w3.org/2000/svg"  width="20px" height="20px" viewBox="0 0 300.000000 282.000000"  preserveAspectRatio="xMidYMid meet">  <g transform="translate(0.000000,282.000000) scale(0.050000,-0.050000)" fill="#ffffff" stroke="none"> <path d="M3450 5610 c-241 -65 -814 -404 -1177 -696 l-69 -56 -567 80 c-312 44 -751 103 -977 131 -226 28 -442 55 -482 61 -184 25 -192 147 102 -1710 106 -666 61 -620 576 -594 173 8 343 13 378 10 l65 -6 8 -340 c27 -1105 566 -1896 1503 -2207 1073 -356 2177 260 2179 1217 2 650 -535 1075 -1091 862 -359 -137 -506 -588 -272 -839 175 -188 481 -101 314 90 -144 164 -68 326 152 327 186 0 317 -174 302 -404 -39 -605 -932 -706 -1240 -140 -223 410 -124 965 233 1300 244 229 442 273 1521 335 539 31 595 40 629 104 48 90 423 1088 423 1124 0 56 -48 72 -332 110 -1296 175 -1397 192 -1435 237 -52 61 -126 212 -285 583 -185 434 -236 481 -458 421z"/> </g> </svg> 
+              </span> Trovo</button>
+          
+              
+              <div class="row mt-3">
+                <div class="col-lg-3 col-xl-3">
+  
+                  <a href="./software/kick/viewbot/">
+                  <div class="wrap wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="card preShow TrovoProduct">
+                      <div class="card__top">
+                        <svg  version="1.0" xmlns="http://www.w3.org/2000/svg"  width="20px" height="20px" viewBox="0 0 300.000000 282.000000"  preserveAspectRatio="xMidYMid meet">  <g transform="translate(0.000000,282.000000) scale(0.050000,-0.050000)" fill="#ffffff" stroke="none"> <path d="M3450 5610 c-241 -65 -814 -404 -1177 -696 l-69 -56 -567 80 c-312 44 -751 103 -977 131 -226 28 -442 55 -482 61 -184 25 -192 147 102 -1710 106 -666 61 -620 576 -594 173 8 343 13 378 10 l65 -6 8 -340 c27 -1105 566 -1896 1503 -2207 1073 -356 2177 260 2179 1217 2 650 -535 1075 -1091 862 -359 -137 -506 -588 -272 -839 175 -188 481 -101 314 90 -144 164 -68 326 152 327 186 0 317 -174 302 -404 -39 -605 -932 -706 -1240 -140 -223 410 -124 965 233 1300 244 229 442 273 1521 335 539 31 595 40 629 104 48 90 423 1088 423 1124 0 56 -48 72 -332 110 -1296 175 -1397 192 -1435 237 -52 61 -126 212 -285 583 -185 434 -236 481 -458 421z"/> </g> </svg>                       <h2>Trovo</h2>
+                      </div>
+                      <div class="card__bottom">
+                        <h2>Trovo AIO</h2>
+                        <p>
+                            Trovo AIO is a multi-functional tool for Trovo with over 10 functions !
+                        </p>
+                        <p>
+                            This is the best AIO bot you will need for trovo with "Viewbot, chatbot, account creator, Mana sender, Mana claimer, Proxy checker, Name gen" and so much more !
+                        </p>
+                      </div>
+                      <span>
+                  </span>
+                    </div>
+                  </div>
+                  </a>
+                  
+  
+                </div>
+                <div class="col-lg-3 col-xl-3">
+  
+                  <a href="./software/extra/mass-livestream/">
+                  <div class="wrap wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="card preShow TrovoProduct">
+                      <div class="card__top">
+                        <svg  version="1.0" xmlns="http://www.w3.org/2000/svg"  width="20px" height="20px" viewBox="0 0 300.000000 282.000000"  preserveAspectRatio="xMidYMid meet">  <g transform="translate(0.000000,282.000000) scale(0.050000,-0.050000)" fill="#ffffff" stroke="none"> <path d="M3450 5610 c-241 -65 -814 -404 -1177 -696 l-69 -56 -567 80 c-312 44 -751 103 -977 131 -226 28 -442 55 -482 61 -184 25 -192 147 102 -1710 106 -666 61 -620 576 -594 173 8 343 13 378 10 l65 -6 8 -340 c27 -1105 566 -1896 1503 -2207 1073 -356 2177 260 2179 1217 2 650 -535 1075 -1091 862 -359 -137 -506 -588 -272 -839 175 -188 481 -101 314 90 -144 164 -68 326 152 327 186 0 317 -174 302 -404 -39 -605 -932 -706 -1240 -140 -223 410 -124 965 233 1300 244 229 442 273 1521 335 539 31 595 40 629 104 48 90 423 1088 423 1124 0 56 -48 72 -332 110 -1296 175 -1397 192 -1435 237 -52 61 -126 212 -285 583 -185 434 -236 481 -458 421z"/> </g> </svg>                       <h2>Trovo</h2>
+                        <h2></h2>
+                      </div>
+                      <div class="card__bottom">
+                        <h2>Mass streamer</h2>
+                        <p>
+                          Mass stream from video files to multiple accounts at the same time.
+                        </p>
+                        <p>
+                          With this tool you can mass stream to Trovo live from video files to multiple accounts at the same time.
+                        </p>
+                      </div>
+                      <span>
+                  </span>
+                    </div>
+                  </div>
+                  </a>
+                    
+                </div>
+                <div class="col-lg-3 col-xl-3">
+  
+                </div>
+                <div class="col-lg-3 col-xl-3">
+  
+                </div>
+              </div>
+  
+
+
+
+
+
+              <div class="Spacer"></div>
+              <h1 id="Kick" class="mt-2 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Kick <i class="fa-solid fa-link BotTitleShortLink" onclick="window.location.hash='#Kick';  navigator.clipboard.writeText(window.location.href)"></i></h1>
+              <button class="Trovo FilterOptions wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s"><span>
+                <svg xmlns="http://www.w3.org/2000/svg" color="White" width="20px" height="20px"  version="1.0" preserveAspectRatio="xMidYMid meet" viewBox="82 63.5 286 321.5">  <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="#FFFF" stroke="none"> <path d="M824 4361 c-2 -2 -4 -726 -4 -1608 l0 -1603 530 0 530 0 0 355 c0 277 3 355 13 356 6 0 39 1 72 0 33 0 113 0 177 -1 l118 0 2 -177 3 -177 158 3 c86 1 166 -1 177 -4 19 -6 20 -16 20 -181 l0 -174 530 0 530 0 0 525 0 525 -175 0 c-163 0 -175 1 -185 20 -6 12 -9 81 -8 180 l3 160 -177 0 -178 0 0 190 0 190 177 2 176 3 -2 160 c-1 88 1 168 4 178 6 15 26 17 186 17 l179 0 0 530 0 530 -32 0 c-18 0 -257 1 -530 2 l-498 3 -2 -180 -3 -180 -177 -3 -178 -2 -2 -178 -3 -177 -185 0 -185 0 -3 358 -2 357 -28 0 c-537 4 -1025 4 -1028 1z"></path> </g> </svg>
+              </span> Kick</button>
+          
+              
+              <div class="row mt-3">
+                <div class="col-lg-3 col-xl-3">
+                  <a href="./software/kick/viewbot/">
+                  <div class="wrap wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="card preShow TrovoProduct">
+                      <div class="card__top">
+                        <svg xmlns="http://www.w3.org/2000/svg" color="White" width="20px" height="20px"  version="1.0" preserveAspectRatio="xMidYMid meet" viewBox="82 63.5 286 321.5">  <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="#FFFF" stroke="none"> <path d="M824 4361 c-2 -2 -4 -726 -4 -1608 l0 -1603 530 0 530 0 0 355 c0 277 3 355 13 356 6 0 39 1 72 0 33 0 113 0 177 -1 l118 0 2 -177 3 -177 158 3 c86 1 166 -1 177 -4 19 -6 20 -16 20 -181 l0 -174 530 0 530 0 0 525 0 525 -175 0 c-163 0 -175 1 -185 20 -6 12 -9 81 -8 180 l3 160 -177 0 -178 0 0 190 0 190 177 2 176 3 -2 160 c-1 88 1 168 4 178 6 15 26 17 186 17 l179 0 0 530 0 530 -32 0 c-18 0 -257 1 -530 2 l-498 3 -2 -180 -3 -180 -177 -3 -178 -2 -2 -178 -3 -177 -185 0 -185 0 -3 358 -2 357 -28 0 c-537 4 -1025 4 -1028 1z"></path> </g> </svg>
+                        <h2>Kick.com</h2>
+                      </div>
+                      <div class="card__bottom">
+                        <h2>Livestream viewbot</h2>
+                        <p>
+                            Simple to use livestream viewbot for kick.com with cloudflare solving !
+                        </p>
+                        <p>
+                          Simple to use viewbot for kick.com livestreams, with a free included cloudflare solver this application can run on basic hardware & provide stable views !
+                        </p>
+                      </div>
+                      <span>
+                  </span>
+                  </div>
+                  </div>
+                  </a>
+                </div>
+                <div class="col-lg-3 col-xl-3">
+  
+                  <a href="./software/kick/aio/">
+                    <div class="wrap wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                      <div class="card preShow TrovoProduct">
+                        <div class="card__top">
+                          <svg xmlns="http://www.w3.org/2000/svg" color="White" width="20px" height="20px"  version="1.0" preserveAspectRatio="xMidYMid meet" viewBox="82 63.5 286 321.5">  <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)" fill="#FFFF" stroke="none"> <path d="M824 4361 c-2 -2 -4 -726 -4 -1608 l0 -1603 530 0 530 0 0 355 c0 277 3 355 13 356 6 0 39 1 72 0 33 0 113 0 177 -1 l118 0 2 -177 3 -177 158 3 c86 1 166 -1 177 -4 19 -6 20 -16 20 -181 l0 -174 530 0 530 0 0 525 0 525 -175 0 c-163 0 -175 1 -185 20 -6 12 -9 81 -8 180 l3 160 -177 0 -178 0 0 190 0 190 177 2 176 3 -2 160 c-1 88 1 168 4 178 6 15 26 17 186 17 l179 0 0 530 0 530 -32 0 c-18 0 -257 1 -530 2 l-498 3 -2 -180 -3 -180 -177 -3 -178 -2 -2 -178 -3 -177 -185 0 -185 0 -3 358 -2 357 -28 0 c-537 4 -1025 4 -1028 1z"></path> </g> </svg>
+                          <h2>Kick.com</h2>
+                        </div>
+                        <div class="card__bottom">
+                          <h2>Kick AIO <div class="flame-emoji">🔥</div></h2>
+                          <p>
+                              #1 Kick AIO bot with over 9+ high quality botting functions.
+                          </p>
+                          <p>
+                              Very simple to use kick AIO bot with multiple features, such as but not limited to Viewbot, Chatbot, Account creator, Followbot, Proxy checker & more.
+                          </p>
+                        </div>
+                        <span>
+                    </span>
+                    </div>
+                    </div>
+                    </a>
+                    
+                </div>
+                <div class="col-lg-3 col-xl-3">
+  
+                </div>
+                <div class="col-lg-3 col-xl-3">
+  
+                </div>
+              </div>
+  
+  
+  
+  
+              <div class="Spacer"></div>
+              <h1 id="Extra" class="mt-2 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">Extra <i class="fa-solid fa-link BotTitleShortLink" onclick="window.location.hash='#Extra';  navigator.clipboard.writeText(window.location.href)"></i></h1>
+              <button class="Other FilterOptions FR d-none d-sm-none d-md-inline wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s"><span><i class="fa-solid fa-terminal"></i></span> Extra</button>
+  
+              
+              <div class="row mt-3 mb-4">
+                <div class="col-lg-3 col-xl-3">
+  
+                  <a href="./software/extra/mass-livestream/">
+                  <div class="wrap wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="card preShow ExtraProduct">
+                      <div class="card__top">
+                        <i class="fa-solid fa-video"></i>                      
+                        <h2>Extra</h2>
+                      </div>
+                      <div class="card__bottom">
+                        <h2>Mass Live streamer <div class="flame-emoji">🔥</div></h2>
+                        <p>
+                            Stream to over 5+ platforms from video files
+                        </p>
+                        <p>
+                            Stream to over 5+ platforms from video files, You can stream to multiple accounts (live-keys) at the same time. This is perfect for anyone who is botting live streams.
+                        </p>
+                      </div>
+                      <span>
+                  </span>
+                    </div>
+                  </div>
+                  </a>
+                  
+  
+                </div>
+                <div class="col-lg-3 col-xl-3">
+                  
+                </div>
+                <div class="col-lg-3 col-xl-3">
+  
+                </div>
+                <div class="col-lg-3 col-xl-3">
+  
+                </div>
+              </div>
+            </div>
+
+
+                        <div id="particles-js">  </div>
+
+           </div>
+  
+  
+        </div>
+
+
+          </div>
+
+
+
+
+        
+        </section>
+
+
+
+
+        <section id="FAQHero">
+          <div class="InnerContentTest">
+            <div class="container fluid align-items-center pt-3 pb-3">
+              <h1> FAQ - Frequently asked questions</h1>         
+               <div class="container InnerContainers">
+                  <div class="row">
+                     <div class="col-lg-6">
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                 <summary class="TitleColour" itemprop="name">Do you provide free updates?</summary>
+                                 <div class="details-expanded" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <p>
+                                      For all of our programs we provide free regular updates to ensure they are not only working but to ensure they are safe to use,
+                                      If for any reason something gets patched or updated we always aim to get a solution released as soon as possible.
+                                    </p>
+                                 </div>
+                              </details>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                 <summary class="TitleColour" itemprop="name">Are the tools 'safe' to use? </summary>
+                                 <div class="details-expanded" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <p>
+                                      Unless stated otherwise all of our tools are safe to use & undetected (within reason), Depending on the software we will also likely
+                                      have a free ebook / "guide" that will contain some key-information to help you get started & use the bot safely.
+                                    </p>
+                                 </div>
+                              </details>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                 <summary class="TitleColour" itemprop="name">Do you offer support ?</summary>
+                                 <div class="details-expanded" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <p>
+                                      Yes, If you have any questions or need help with anything please feel free to contact us <span><a href="https://discord.luxbot.gg/">here.</a>
+                                      When contacting us please ensure you leave the issue you are having in as much detail as possible, This will help us to resolve your issue as quickly as possible.
+
+                                    </p>
+                                 </div>
+                              </details>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                 <summary class="TitleColour" itemprop="name">What operating-system do you support ?</summary>
+                                 <div class="details-expanded" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <p>
+                                      This all depends on the software, unless stated otherwise most of our software will support Windows 7 & above on the windows platform,
+                                      even though mac & linux is not "natively" supported we have seen cases where it has worked via (<a href="https://www.winehq.org/">WineBottler</a>).
+                                    </p>
+                                 </div>
+                              </details>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col">
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                 <summary class="TitleColour" itemprop="name">Do I need to provide anything ?</summary>
+                                 <div class="details-expanded" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <p>
+                                      Depending on the software chosen you might be required to provide your own proxies / accounts etc, usually this information can be located on the product page,
+                                      if you are unsure please feel free to contact us <a href="https://discord.luxbot.gg/">here.</a>
+                                 </div>
+                              </details>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                 <summary class="TitleColour" itemprop="name">What payment methods do you accept ?</summary>
+                                 <div class="details-expanded" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <p>
+                                      We accept most major crypto currencies such as "BTC , LTC , ETH" & many more, We also accept PayPal & Credit/Debit cards if possible,
+                                      When you click 'purchase' all of the available payment methods will be displayed.
+                                    </p>
+                                 </div>
+                              </details>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-lg-12">
+                              <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                 <summary class="TitleColour" itemprop="name">Where can I buy crypto currency?</summary>
+                                 <div class="details-expanded" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                    <p>
+                                      There are many different exchanges that you can use to buy crypto currency, We recommend <a href="https://www.binance.com/">Binance</a> as they are one of the largest exchanges & have a very good reputation.
+                                    </p>
+                                 </div>
+                              </details>
+                           </div>
+
+                           <div class="col-lg-12">
+                            <details itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                               <summary class="TitleColour" itemprop="name">Do you provide custom tools ?</summary>
+                               <div class="details-expanded" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                  <p>
+                                    Yes, If you are looking for a custom tool please feel free to contact us <a href="https://discord.luxbot.gg/">here.</a> If we do not sell the tool you are looking for we will likely be able to 
+                                    create it for you at a reasonable price.
+                                  </p>
+                               </div>
+                            </details>
+                         </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+        </section>
+    
+    
+        <footer id="FooterHero" class="FooterHero">
+            <div class="AnimatedContainer">
+                <ul class="circles">
+                    <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+                </ul>
+            </div>
+            <div class="container footer-widget-area">
+                <div class="row">
+                    <div class="col-md-4 p-3">
+                        <div class="footer-widget-heading">
+                            <h4>LuxBot.gg</h4>
+                        </div>
+                        <p>This website is in no way affiliated with, authorized, maintained, sponsored or endorsed by Twitch Interactive, Inc. (Twitch.tv) or any of its affiliates or subsidiaries.</p>
+                        <a href="https://www.youtube.com/channel/UCkDN6rpJxhyzfhmtAPRCKdA">  <i class="fa-brands fa-youtube fa-lg FooterFa"></i> </a>
+                        <a href="https://discord.luxbot.gg/"> <i class="fa-brands fa-discord fa-lg FooterFa"></i>  </a>
+                      </div>
+                    <div class="col-md-2 p-3">
+                        <div class="footer-widget-heading">
+                            <h4>Popular tools</h4>
+                        </div>
+                            <ul class="linkediting">
+                                <li><a href="./software/twitch/hybrid/"><i class="fa fa-angle-right"></i> Twitch API adbot</a></li>
+                                <li><a href="./software/twitch/aio-pro/"><i class="fa fa-angle-right"></i> Twitch AIO [PRO]</a></li>
+                                <li><a href="./software/extra/mass-livestream/"><i class="fa fa-angle-right"></i> Mass streamer</a></li>
+                                <li><a href="./software/twitch/aio/"><i class="fa fa-angle-right"></i> Twitch AIO [Lite]</a></li>
+                            </ul>
+                    </div>
+                    <div class="col-md-2 p-3">
+                        <div class="footer-widget-heading">
+                            <h4>Extra</h4>
+                        </div>
+                        <ul class="linkediting">
+                          <li> <a href="https://luxbot.gg/sitemap.xml" target="_blank"><i class="fa fa-angle-right"></i> Sitemap</a></li>
+                            <li> <a href="./tos/" target="_blank"><i class="fa fa-angle-right"></i> TOS</a></li>
+                            <li> <a href="./tos/#Privacy" target="_blank"><i class="fa fa-angle-right"></i> Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 p-3">
+                        <div class="footer-widget-heading">
+                            <h4>Social</h4>
+                        </div>
+                        <ul class="linkediting">
+                            <li> <a href="https://www.youtube.com/channel/UCkDN6rpJxhyzfhmtAPRCKdA" target="_blank"><i class="fa fa-angle-right"></i> YouTube</a></li>
+                            <li> <a href="https://discord.luxbot.gg/" target="_blank"><i class="fa fa-angle-right"></i> Discord</a></li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+            </div>  
+        </footer>
+
+        <a id="topBTN" href="#header" class="top" aria-label="Back to top" title="Back to top" onclick="ReturnTop()">↑</a>
+        <script>
+          $(function(){
+              wow = new WOW(
+              {
+                  boxClass:'wow', 
+                  animateClass:'animated', 
+                  offset:0, 
+                  mobile:false,
+                  live:true 
+              })
+              wow.init();
+          });
+      </script>
+    <script src="./js/navBar.js"></script>
+</body>
+</html>
